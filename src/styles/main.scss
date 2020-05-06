@@ -1,0 +1,100 @@
+@import '~bulma/bulma.sass';
+
+body {
+  font-size: 20px;
+}
+//*HOME PAGE--------------------
+.home-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  color: #FC3D21;
+}
+.hero-body {
+  margin: 0 auto;
+}
+
+.hero.is-info{
+  background-image: url('../../src/assets/nasa-background.png');
+  background-image: cover;
+}
+
+//*PROJECTS PAGE-------------------------
+.button {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  width: 150px;
+}
+.columns {
+  margin-left: 3.25rem;
+}
+
+
+//*NASA ALBUM PAGE -----------------------
+.nasa-images {
+  margin-left: 5px;
+  margin-bottom: 20px;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+
+  .control {
+    display: flex;
+
+    .input {
+      width:500px;
+      height: 48px;
+      margin-left: 5px;
+    }
+    .button {
+      margin-left: 5px;
+      margin-right: 30px;
+      height: 48px;
+    }
+  }
+}
+    .select {
+      margin-left: 40px;
+    }
+
+.next-button {
+  margin-left: 5px;
+}
+
+.album {
+  display: flex;
+  justify-content: space-around;
+
+  .album-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin-left: 0px;
+    margin-top: 100px;
+  }
+
+  .album-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+//*END OF NASA ALBUM--------
+
+.navbar {
+  background-color: rgba(11, 61, 145, 0.85);
+
+  .navbar-item {
+    color:#FC3D21;
+    size: 20px;
+  }
+}
+
+
+
+
+
