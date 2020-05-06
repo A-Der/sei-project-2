@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const nasaUrl = 'https://api.nasa.gov/planetary/apod?api_key=NbUMNiC7IbeebFugN5Z80yJ7R97wLwaIrMNIuIgr'
+const nasaUrl = `https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_NASA_KEY}`
 
 // * Function to GET pic of the day 
 export const getPicOfDay = () => {
@@ -9,10 +9,10 @@ export const getPicOfDay = () => {
 
 // * Get a single project
 export const getSingleProject = (id) => {
-  return axios.get(`https://api.nasa.gov/techport/api/projects/${id}?api_key=NbUMNiC7IbeebFugN5Z80yJ7R97wLwaIrMNIuIgr`)
+  return axios.get(`https://api.nasa.gov/techport/api/projects/${id}?api_key=${process.env.REACT_APP_NASA_KEY}`)
 }
 
 export const getAllProjects = () => {
-  return axios.get('https://api.nasa.gov/techport/api/projects?api_key=NbUMNiC7IbeebFugN5Z80yJ7R97wLwaIrMNIuIgr&updatedSince=2020-01-01')
+  return axios.get(`https://api.nasa.gov/techport/api/projects?api_key=${process.env.REACT_APP_NASA_KEY}&updatedSince=2020-01-01`)
 }
 
