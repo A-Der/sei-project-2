@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 import PicCard from './PicCard'
 import { getPicOfDay } from '../../lib/api'
 

@@ -1,5 +1,4 @@
 import React from 'react'
-
 import axios from 'axios'
 
 
@@ -37,7 +36,7 @@ class NasaImages extends React.Component {
       const res = await axios.get(`https://images-api.nasa.gov/search?q=${query}`)
       this.setState({ data: { ...res.data } })
     } catch (err) {
-      this.props.history.push('/imageError') //*DOES FORWARD TO /IMAGEERROR url BUT DOE NOT SHOW PAGE
+      this.props.history.push('/imageError') //*DOES FORWARD TO /IMAGE ERROR url BUT DOE NOT SHOW PAGE
       console.log(err)
     }
   }

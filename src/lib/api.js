@@ -12,6 +12,7 @@ export const getSingleProject = (id) => {
   return axios.get(`https://api.nasa.gov/techport/api/projects/${id}?api_key=${process.env.REACT_APP_NASA_KEY}`)
 }
 
+// *  Get all projects
 export const getAllProjects = () => {
   return axios.get(`https://api.nasa.gov/techport/api/projects?api_key=${process.env.REACT_APP_NASA_KEY}&updatedSince=2020-01-01`)
 }
