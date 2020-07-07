@@ -6,7 +6,7 @@ This site is pair-coded using NASA's public API's. We used the API's to GET & PO
 This was our first time using APIs in an independent project and I really enjoyed looking through what was returned while checking out APIs to inspire ideas for pages on our site.
 
 You can check it out here:
-https://a-der.github.io/sei-project-2/
+https://nasa-archives.netlify.app/
 
 Or checkout the GitHub repo here to download:
 https://github.com/A-Der/sei-project-2
